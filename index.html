@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content:start;
+        background-color:black;
+        /* gap: 10px; */
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    .box{
+       width: 50px;
+       height: 50px;
+       background-color:white;
+    }
+    .aa{
+        width: 50px;
+        height: 50px;
+        background-color:white;
+        justify-self:right;
+        align-self: right;
+    }
+    .aa:hover{
+        background-color: grey;
+    }
+    img:hover{
+       background-color: grey;
+    }
+    .bb,.cc{
+        margin: 10px;
+        padding: 30px;
+        text-align: center;
+    }
+    .bb{
+        font-size: 70px;
+        font-weight: 800;
+    }
+    .cc{
+        font-size: 30px;
+    }
+    h3,h4{
+        display: inline-block;
+    }
+    h4{
+        background-color: black;
+        color: white;
+    }
+    @media screen and (max-width:600px) {
+        header{
+            display: none;
+        }
+        
+    }
+    @media screen and (max-width:1024) and (min-width:600px) {
+         header{
+            display: block;
+            flex: 1 1 60%;
+         }        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box"><img src="https://www.svgrepo.com/show/494304/facebook-rounded.svg" alt=""></div>
+        <div class="box"><img src="https://www.svgrepo.com/show/494313/instagram-rounded.svg" alt=""></div>
+        <div class="box"><img src="https://www.svgrepo.com/show/360774/snapchat-square.svg" alt=""></div>
+        <div class="box"><img src="https://www.svgrepo.com/show/494321/twitter-rounded.svg" alt=""></div>
+        <div class="box"><img src="https://www.svgrepo.com/show/494177/linkedin-boerder.svg" alt=""></div>
+        <div class="aa"><img src="https://www.svgrepo.com/show/506743/search-square.svg" alt=""></div>
+    </header>
+    <section>
+        <div class="bb">JANE BLOGLIFE</div>
+        <div class="cc"><h3>Welcome to the blog of &nbsp;<h4>Jane's world</h4></h3></div>
+        <div class="dd"><img src="https://www.w3schools.com/w3images/jane.jpg" alt=""></div>
+    </section>
+</body>
+</html>
